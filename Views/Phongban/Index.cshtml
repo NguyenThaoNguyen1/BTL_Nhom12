@@ -1,0 +1,57 @@
+@* @model IEnumerable<BTL_PTPMQL_NHOM12.Models.Phongban> *@
+@model BTL_PTPMQL_NHOM12.Models.MovieGenreViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Bảng Phòng ban</h1>
+
+<p>
+    <a asp-action="Create" class="add-create">Thêm phòng ban</a> |
+    <a asp-action="Upload" class="add-create">Tải lên</a>
+    @* Tạo thanh tìm kiếm *@
+    <form asp-controller="Phongban" asp-action="Index" method="get">
+    <p>
+
+        <select asp-for="TimkiemPB" asp-items="Model.TenPB" class="input">
+            <option value="">Tất cả</option>
+        </select>
+        <input type="text" asp-for="SearchString"  placeholder="Tìm kiếm" class="input"/>
+        <input type="submit" value="Tìm kiếm" class="submit"/>
+    </p>
+</form>
+@* ////////////keet thuc tao tìm kiếm *@
+
+</p>
+<table class="table">
+    <thead>
+        <tr>
+             @* <th>
+                @Html.DisplayNameFor(model => model.MaPB)
+            </th> *@
+            <th>
+                @Html.DisplayNameFor(model => model.TenPB)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Phongban) {
+        <tr>
+             <td>
+                @Html.DisplayFor(modelItem => item.MaPB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenPB)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.MaPB" class="add_TSX">Sửa</a> |
+                <a asp-action="Details" asp-route-id="@item.MaPB" class="add_TSX">Chi tiết</a> |
+                <a asp-action="Delete" asp-route-id="@item.MaPB" class="add_TSX">Xóa</a> 
+             
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,68 @@
+ 
+@model BTL_PTPMQL_NHOM12.Models.Khachhang
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Tạo mới</h1>
+
+<h4>Bảng khách hàng</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="MaKH" class="control-label"></label>
+                <input asp-for="MaKH" class="form-control" value="@ViewBag.newID"/>
+                <span asp-validation-for="MaKH" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TenKH" class="control-label"></label>
+                <input asp-for="TenKH" class="form-control" />
+                <span asp-validation-for="TenKH" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CoQuanKH" class="control-label"></label>
+                <input asp-for="CoQuanKH" class="form-control" />
+                <span asp-validation-for="CoQuanKH" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoTKKH" class="control-label"></label>
+                <input asp-for="SoTKKH" class="form-control" />
+                <span asp-validation-for="SoTKKH" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TenNH" class="control-label"></label>
+                <select asp-for="TenNH" class ="form-control" asp-items="ViewBag.TenNH"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="DiaChiKH" class="control-label"></label>
+                <input asp-for="DiaChiKH" class="form-control" />
+                <span asp-validation-for="DiaChiKH" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SDTKH" class="control-label"></label>
+                <input asp-for="SDTKH" class="form-control" />
+                <span asp-validation-for="SDTKH" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmailKH" class="control-label"></label>
+                <input asp-for="EmailKH" class="form-control" />
+                <span asp-validation-for="EmailKH" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Tạo mới" class="btn btn-primary btn-create" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="add_TSX">Trở lại danh sách</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

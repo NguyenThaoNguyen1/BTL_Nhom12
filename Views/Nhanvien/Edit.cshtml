@@ -1,0 +1,64 @@
+@model BTL_PTPMQL_NHOM12.Models.Nhanvien
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Chỉnh sửa</h1>
+
+<h4>Bảng nhân viên</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="MaNV" />
+            <div class="form-group">
+                <label asp-for="TenNV" class="control-label"></label>
+                <input asp-for="TenNV" class="form-control" />
+                <span asp-validation-for="TenNV" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GioiTinhNV" class="control-label"></label>
+                <input asp-for="GioiTinhNV" class="form-control" />
+                <span asp-validation-for="GioiTinhNV" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TenPB" class="control-label"></label>
+                <select asp-for="TenPB" class="form-control" asp-items="ViewBag.TenPB"></select>
+                <span asp-validation-for="TenPB" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DiaChiNV" class="control-label"></label>
+                <input asp-for="DiaChiNV" class="form-control" />
+                <span asp-validation-for="DiaChiNV" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmailNV" class="control-label"></label>
+                <input asp-for="EmailNV" class="form-control" />
+                <span asp-validation-for="EmailNV" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SDTNV" class="control-label"></label>
+                <input asp-for="SDTNV" class="form-control" />
+                <span asp-validation-for="SDTNV" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ChucVuNV" class="control-label"></label>
+                <input asp-for="ChucVuNV" class="form-control" />
+                <span asp-validation-for="ChucVuNV" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Lưu" class="btn btn-primary btn-create" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="add_TSX">Trở lại danh sách</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

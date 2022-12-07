@@ -1,0 +1,89 @@
+@model IEnumerable<BTL_PTPMQL_NHOM12.Models.Kyhopdong>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Bảng kí hợp đồng</h1>
+
+<p>
+    <a asp-action="Create" class="add-create">Thêm mới</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SoHD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nguoiquanli)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Khachhang)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dichvu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NoiDung)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DiaDiem)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NgayKi)
+            </th>
+            @* <th>
+                @Html.DisplayNameFor(model => model.ThoiGianThanhToan)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhuongThucTT)
+            </th> *@
+            @* <th>
+                @Html.DisplayNameFor(model => model.TrachNhiemChung)
+            </th> *@
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+             <td>
+                @Html.DisplayFor(modelItem => item.SoHD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nguoiquanli.MaQL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Khachhang.MaKH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dichvu.MaDV)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NoiDung)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiaDiem)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgayKi)
+            </td>
+            @* <td>
+                @Html.DisplayFor(modelItem => item.ThoiGianThanhToan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhuongThucTT.MaPT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TrachNhiemChung)
+            </td> *@
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.SoHD" class="add_TSX">Sửa</a> |
+                <a asp-action="Details" asp-route-id="@item.SoHD" class="add_TSX">Chi tiết</a> |
+                <a asp-action="Delete" asp-route-id="@item.SoHD" class="add_TSX">Xóa</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

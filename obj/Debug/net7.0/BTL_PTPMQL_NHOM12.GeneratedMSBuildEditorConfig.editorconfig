@@ -1,0 +1,293 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BTL_PTPMQL_NHOM12
+build_property.RootNamespace = BTL_PTPMQL_NHOM12
+build_property.ProjectDir = c:\Nguyên_BTL\BTL_PTPMQL_NHOM12\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = c:\Nguyên_BTL\BTL_PTPMQL_NHOM12
+build_property._RazorSourceGeneratorDebug = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Dangki/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuZ2tpXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Dangki/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuZ2tpXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Dangki/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuZ2tpXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Dangki/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuZ2tpXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Dangki/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuZ2tpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Dichvu/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGljaHZ1XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Dichvu/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGljaHZ1XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Dichvu/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGljaHZ1XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Dichvu/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGljaHZ1XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Dichvu/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGljaHZ1XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Giaonhan/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lhb25oYW5cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Giaonhan/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lhb25oYW5cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Giaonhan/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lhb25oYW5cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Giaonhan/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lhb25oYW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Giaonhan/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lhb25oYW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Khachhang/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hoYW5nXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Khachhang/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hoYW5nXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Khachhang/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hoYW5nXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Khachhang/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hoYW5nXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Khachhang/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hoYW5nXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Khachhang/Upload.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hoYW5nXFVwbG9hZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Kyhopdong/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3lob3Bkb25nXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Kyhopdong/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3lob3Bkb25nXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Kyhopdong/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3lob3Bkb25nXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Kyhopdong/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3lob3Bkb25nXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Kyhopdong/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3lob3Bkb25nXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Loaidichvu/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haWRpY2h2dVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Loaidichvu/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haWRpY2h2dVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Loaidichvu/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haWRpY2h2dVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Loaidichvu/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haWRpY2h2dVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Loaidichvu/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haWRpY2h2dVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Loaidichvu/Upload.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haWRpY2h2dVxVcGxvYWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/login/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbG9naW5cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Nganhang/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmdhbmhhbmdcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Nganhang/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmdhbmhhbmdcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Nganhang/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmdhbmhhbmdcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Nganhang/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmdhbmhhbmdcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Nganhang/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmdhbmhhbmdcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Nganhang/Upload.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmdhbmhhbmdcVXBsb2FkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Nguoiquanli/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmd1b2lxdWFubGlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Nguoiquanli/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmd1b2lxdWFubGlcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Nguoiquanli/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmd1b2lxdWFubGlcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Nguoiquanli/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmd1b2lxdWFubGlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Nguoiquanli/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmd1b2lxdWFubGlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Nhanvien/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhbnZpZW5cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Nhanvien/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhbnZpZW5cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Nhanvien/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhbnZpZW5cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Nhanvien/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhbnZpZW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Nhanvien/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhbnZpZW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Nhanvien/Upload.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhbnZpZW5cVXBsb2FkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Phongban/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhvbmdiYW5cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Phongban/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhvbmdiYW5cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Phongban/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhvbmdiYW5cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Phongban/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhvbmdiYW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Phongban/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhvbmdiYW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Phongban/Upload.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhvbmdiYW5cVXBsb2FkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/PhuongThucTT/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGh1b25nVGh1Y1RUXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/PhuongThucTT/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGh1b25nVGh1Y1RUXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/PhuongThucTT/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGh1b25nVGh1Y1RUXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/PhuongThucTT/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGh1b25nVGh1Y1RUXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/PhuongThucTT/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGh1b25nVGh1Y1RUXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/PhuongThucTT/Upload.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGh1b25nVGh1Y1RUXFVwbG9hZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Nguyên_BTL/BTL_PTPMQL_NHOM12/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-6yiopdkpa8

@@ -1,0 +1,57 @@
+@model BTL_PTPMQL_NHOM12.Models.Nguoiquanli
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Bạn có muốn xóa?</h1>
+
+<h3>Bảng người quản lí</h3>
+<div>
+    @* <h4>Nguoiquanli</h4> *@
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TenQL)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TenQL)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Phongban)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Phongban.TenPB)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SoTKNQL)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SoTKNQL)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DiaChiNQL)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DiaChiNQL)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SDTNQl)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SDTNQl)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EmailNQL)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EmailNQL)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="MaQL" />
+        <input type="submit" value="Xóa" class="btn btn-danger btn-delete" />  
+        <a asp-action="Index" class="add_TSX">Trở lại danh sách</a>
+    </form>
+</div>

@@ -1,0 +1,68 @@
+@model IEnumerable<BTL_PTPMQL_NHOM12.Models.Nguoiquanli>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Bảng người quản lí</h1>
+
+<p>
+    <a asp-action="Create" class="add-create">Thêm người quản lí</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MaQL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TenQL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Phongban)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoTKNQL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DiaChiNQL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SDTNQl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmailNQL)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaQL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phongban.MaPB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoTKNQL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiaChiNQL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SDTNQl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmailNQL)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.MaQL" class="add_TSX">Sửa</a> |
+                <a asp-action="Details" asp-route-id="@item.MaQL" class="add_TSX">Chi tiết</a> |
+                <a asp-action="Delete" asp-route-id="@item.MaQL" class="add_TSX">Xóa</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

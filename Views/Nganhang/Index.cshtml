@@ -1,0 +1,82 @@
+@* @model IEnumerable<BTL_PTPMQL_NHOM12.Models.Nganhang> *@
+@model BTL_PTPMQL_NHOM12.Models.MovieGenreViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Bảng ngân hàng</h1>
+
+<p>
+    <a asp-action="Create" class="add-create">Thêm ngân hàng</a> |
+    <a asp-action="Upload" class="add-create">Tải lên</a>
+
+     @* Tạo thanh tìm kiếm *@
+    <form asp-controller="Nganhang" asp-action="Index" method="get">
+    <p>
+
+        <select asp-for="TimkiemNH" asp-items="Model.TenNH" class="input">
+            <option value="">Tất cả</option>
+        </select>
+        <input type="text" asp-for="SearchString"  placeholder="Tìm kiếm" class="input"/>
+        <input type="submit" value="Tìm kiếm" class="submit"/>
+    </p>
+</form>
+@* ////////////keet thuc tao tìm kiếm *@
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TenNH)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Nganhang) {
+        <tr>
+             
+            <td>
+                @Html.DisplayFor(modelItem => item.TenNH)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.MaNH" class="add_TSX">Sửa</a> |
+                <a asp-action="Details" asp-route-id="@item.MaNH" class="add_TSX">Chi tiết</a> |
+                <a asp-action="Delete" asp-route-id="@item.MaNH" class="add_TSX">Xóa</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<style>
+@* .input {
+ width: 15%;
+ height: 30px;
+ line-height: 28px;
+ padding: 0 1rem;
+ padding-left: 2.5rem;
+ border: 2px solid transparent;
+ border-radius: 8px;
+ outline: none;
+ background-color: #f3f3f4;
+ color: #0d0c22;
+ transition: .3s ease;
+}
+
+.input::placeholder {
+ color: #9e9ea7;
+}
+
+.input:focus, input:hover {
+ outline: none;
+ border-color: rgba(234,76,137,0.4);
+ background-color: #fff;
+ box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+.submit{
+    border-radius: 20%;
+    border: solid 1px #a79c9c;
+
+} *@
+</style>

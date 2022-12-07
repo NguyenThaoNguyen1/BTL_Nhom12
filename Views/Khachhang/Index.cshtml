@@ -1,0 +1,74 @@
+@model IEnumerable<BTL_PTPMQL_NHOM12.Models.Khachhang>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Bảng khách hàng</h1>
+
+<p>
+    <a asp-action="Create" class="add-create">Thêm khách hàng</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+             <th>
+                @Html.DisplayNameFor(model => model.MaKH)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TenKH)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CoQuanKH)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoTKKH)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nganhang)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DiaChiKH)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SDTKH)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmailKH)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaKH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CoQuanKH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoTKKH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nganhang.MaNH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiaChiKH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SDTKH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmailKH)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.MaKH" class="add_TSX">Sửa</a> |
+                <a asp-action="Details" asp-route-id="@item.MaKH" class="add_TSX">Chi tiết</a> |
+                <a asp-action="Delete" asp-route-id="@item.MaKH" class="add_TSX">Xóa</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

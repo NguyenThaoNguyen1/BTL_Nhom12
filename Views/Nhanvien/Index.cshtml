@@ -1,0 +1,77 @@
+@model IEnumerable<BTL_PTPMQL_NHOM12.Models.Nhanvien>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Bảng nhân viên</h1>
+
+<p>
+    <a asp-action="Create" class="add-create">Thêm nhân viên</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+             <th>
+                @Html.DisplayNameFor(model => model.MaNV)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TenNV)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GioiTinhNV)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Phongban)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DiaChiNV)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmailNV)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SDTNV)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ChucVuNV)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaNV)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenNV)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GioiTinhNV)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phongban.MaPB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiaChiNV)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmailNV)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SDTNV)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChucVuNV)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.MaNV" class="add_TSX">Sửa</a> |
+                <a asp-action="Details" asp-route-id="@item.MaNV" class="add_TSX">Chi tiết</a> |
+                <a asp-action="Delete" asp-route-id="@item.MaNV" class="add_TSX">Xóa</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

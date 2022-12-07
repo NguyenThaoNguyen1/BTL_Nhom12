@@ -1,0 +1,57 @@
+@model BTL_PTPMQL_NHOM12.Models.Dichvu
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Tạo mới</h1>
+
+<h4>Bảng dịch vụ</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="MaDV" class="control-label"></label>
+                <input asp-for="MaDV" class="form-control" value="@ViewBag.newID"/>
+                <span asp-validation-for="MaDV" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MaLoaiDV" class="control-label"></label>
+                <select asp-for="MaLoaiDV" class ="form-control" asp-items="ViewBag.MaLoaiDV"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="TenDV" class="control-label"></label>
+                <input asp-for="TenDV" class="form-control" />
+                <span asp-validation-for="TenDV" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DonViTinh" class="control-label"></label>
+                <input asp-for="DonViTinh" class="form-control" />
+                <span asp-validation-for="DonViTinh" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DonGia" class="control-label"></label>
+                <input asp-for="DonGia" class="form-control" />
+                <span asp-validation-for="DonGia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GhiChu" class="control-label"></label>
+                <input asp-for="GhiChu" class="form-control" />
+                <span asp-validation-for="GhiChu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Tạo mới" class="btn btn-primary btn-create" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="add_TSX">Trở lại danh sách</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

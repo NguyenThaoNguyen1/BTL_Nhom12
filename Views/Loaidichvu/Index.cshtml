@@ -1,0 +1,49 @@
+@model IEnumerable<BTL_PTPMQL_NHOM12.Models.Loaidichvu>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Bảng loại dịch vụ</h1>
+
+<p>
+    <a asp-action="Create" class="add-create">Thêm loại dịch vụ</a> |
+    <a asp-action="Upload" class="add-create">Tải lên</a>
+
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MaLoaiDV)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TenLoaiDV)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.YeuCaudikem)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaLoaiDV)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenLoaiDV)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.YeuCaudikem)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.MaLoaiDV" class="add_TSX">Sửa</a> |
+                <a asp-action="Details" asp-route-id="@item.MaLoaiDV" class="add_TSX">Chi tiết</a> |
+                <a asp-action="Delete" asp-route-id="@item.MaLoaiDV" class="add_TSX">Xóa</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,56 @@
+<style>
+    .btn-create{
+        display: block;
+        background-color: #b9cdb9;
+        color: #000;
+        border-radius: 40px;
+        margin-top:0 20px;
+        
+    }
+    .btn-create:hover{
+        background-color: #037e15;
+    }
+</style>
+@model BTL_PTPMQL_NHOM12.Models.Loaidichvu
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Tạo mới</h1>
+
+<h4>Bảng loại dịch vụ</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="MaLoaiDV" class="control-label"></label>
+                <input asp-for="MaLoaiDV" class="form-control" />
+                <span asp-validation-for="MaLoaiDV" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TenLoaiDV" class="control-label"></label>
+                <input asp-for="TenLoaiDV" class="form-control" />
+                <span asp-validation-for="TenLoaiDV" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="YeuCaudikem" class="control-label"></label>
+                <input asp-for="YeuCaudikem" class="form-control" />
+                <span asp-validation-for="YeuCaudikem" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Tạo mới" class="btn btn-primary btn-create" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="add_TSX">Trở lại danh sách</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

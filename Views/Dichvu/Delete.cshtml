@@ -1,0 +1,51 @@
+@model BTL_PTPMQL_NHOM12.Models.Dichvu
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Bạn có muốn xóa?</h1>
+
+<h3>Bảng dịch vụ</h3>
+<div>
+    @* <h4>Dichvu</h4> *@
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Loaidichvu)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Loaidichvu.MaLoaiDV)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TenDV)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TenDV)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DonViTinh)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DonViTinh)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DonGia)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DonGia)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.GhiChu)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GhiChu)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="MaDV" />
+        <input type="submit" value="Xóa" class="btn btn-danger btn-delete" /> |
+        <a asp-action="Index" class="add_TSX">Trở lại danh sách</a>
+    </form>
+</div>

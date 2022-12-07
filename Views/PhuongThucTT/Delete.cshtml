@@ -1,0 +1,27 @@
+@model BTL_PTPMQL_NHOM12.Models.PhuongThucTT
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Bạn có muốn xóa?</h1>
+
+<h3>Bảng phương thức thanh toán</h3>
+<div>
+    <h4>PhuongThucTT</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PhuongThucthanhToan)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PhuongThucthanhToan)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="MaPT" />
+        <input type="submit" value="Xóa" class="btn btn-danger btn-delete" /> 
+        <a asp-action="Index" class="add_TSX">Trở lại danh sách</a>
+    </form>
+</div>

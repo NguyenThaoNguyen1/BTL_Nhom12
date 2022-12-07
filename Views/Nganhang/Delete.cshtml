@@ -1,0 +1,27 @@
+@model BTL_PTPMQL_NHOM12.Models.Nganhang
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>BẠn có muốn xóa?</h1>
+
+<h3>Bảng ngân hàng</h3>
+<div>
+    @* <h4>Nganhang</h4> *@
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TenNH)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TenNH)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="MaNH" />
+        <input type="submit" value="Xóa" class="btn btn-danger btn-delete" /> |
+        <a asp-action="Index" class="add_TSX">Trở lại danh sách</a>
+    </form>
+</div>

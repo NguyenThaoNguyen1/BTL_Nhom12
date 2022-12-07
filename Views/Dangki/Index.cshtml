@@ -1,0 +1,60 @@
+
+@model IEnumerable<BTL_PTPMQL_NHOM12.Models.Dangki>
+
+@{
+    ViewData["Title"] = "Index";
+}
+ 
+<h1>Bảng đăng kí</h1>
+
+<p>
+    <a asp-action="Create" class="add-create">Thêm đăng kí</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+             <th>
+                @Html.DisplayNameFor(model => model.MaDK)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Khachhang)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dichvu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NgayDangKi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoLuong)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaDK)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Khachhang.MaKH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dichvu.MaDV)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgayDangKi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoLuong)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.MaDK" class="add_TSX">Sửa</a> |
+                <a asp-action="Details" asp-route-id="@item.MaDK" class="add_TSX">Chi tiết</a> |
+                <a asp-action="Delete" asp-route-id="@item.MaDK" class="add_TSX">Xóa</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

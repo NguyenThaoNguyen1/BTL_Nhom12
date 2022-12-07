@@ -1,0 +1,39 @@
+@model BTL_PTPMQL_NHOM12.Models.Loaidichvu
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Chỉnh sửa</h1>
+
+<h4>Bảng loại dịch vụ</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="MaLoaiDV" />
+            <div class="form-group">
+                <label asp-for="TenLoaiDV" class="control-label"></label>
+                <input asp-for="TenLoaiDV" class="form-control" />
+                <span asp-validation-for="TenLoaiDV" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="YeuCaudikem" class="control-label"></label>
+                <input asp-for="YeuCaudikem" class="form-control" />
+                <span asp-validation-for="YeuCaudikem" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Lưu" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="add_TSX">Trở lại danh sách</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] -HỆ THỐNG GN</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/BTL_PTPMQL_NHOM12.styles.css" asp-append-version="true" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css'
+        integrity='sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=='
+        crossorigin='anonymous' />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand nhom12" asp-area="" asp-controller="Home" asp-action="Index">PTPMQL-NHOM12 </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                @* @if (TempData["Login"] != null)
+                { *@
+                   
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between ">
+                    <ul class="navbar-nav flex-grow-1">
+                        @* <li class="nav-item">
+                            <a class="nav-link text-dark " asp-area="" asp-controller="Home" asp-action="Index" >HOME </a>
+                            </li> *@
+                        @* <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            </li> *@
+                        <li class="nav-item">
+                            <a class="nav-link text-dark btn-home " asp-area="" asp-controller="Nhanvien" asp-action="Index">Nhân viên </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark btn-home" asp-area="" asp-controller="Nguoiquanli"
+                                asp-action="Index"> Người quản lí </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark btn-home" asp-area="" asp-controller="Khachhang"
+                                asp-action="Index">Khách hàng </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark btn-home" asp-area="" asp-controller="Dichvu" asp-action="Index">Dịch vụ
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark btn-home" asp-area="" asp-controller="Kyhopdong" asp-action="Index">Kí hợp đồng </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark btn-home" asp-area="" asp-controller="Dangki" asp-action="Index">Đăng kí </a>
+                        </li>
+                        <li class="nav-item btn-home">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Giaonhan" asp-action="Index">Giao nhận</a>
+                        </li>
+
+                    </ul>
+                </div>
+                @* } *@
+
+            </div>
+        </nav>
+        <div>
+        </div>
+
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3 ">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted ">
+        <div class="container">
+            &copy; Tiếp nhận và quản lí dịch vụ cho khách hàng<a asp-area="" style="text-decoration: none"
+                asp-controller="Home" asp-action="Index"> ........Trang chủ</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>
+<style>
+.btn-home:hover{
+    border-bottom: solid 1px rgb(91, 107, 107);
+    opacity: 0.6;
+    }
+.nhom12{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+</style>

@@ -1,0 +1,43 @@
+@model IEnumerable<BTL_PTPMQL_NHOM12.Models.PhuongThucTT>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Bảng Phương thức thanh toán</h1>
+
+<p>
+    <a asp-action="Create" class="add-create">Thêm phương thức thanh toán</a> |
+    <a asp-action="Upload" class="add-create">Tải lên</a>
+
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MaPT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhuongThucthanhToan)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaPT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhuongThucthanhToan)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.MaPT" class="add_TSX">Sửa</a> |
+                <a asp-action="Details" asp-route-id="@item.MaPT" class="add_TSX">Chi tiết</a> |
+                <a asp-action="Delete" asp-route-id="@item.MaPT" class="add_TSX">Xóa</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,49 @@
+@model BTL_PTPMQL_NHOM12.Models.Dangki
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Chỉnh sửa</h1>
+
+<h4>Bảng đăng kí</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="MaDK" />
+            <div class="form-group">
+                <label asp-for="MaKH" class="control-label"></label>
+                <select asp-for="MaKH" class="form-control" asp-items="ViewBag.MaKH"></select>
+                <span asp-validation-for="MaKH" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MaDV" class="control-label"></label>
+                <select asp-for="MaDV" class="form-control" asp-items="ViewBag.MaDV"></select>
+                <span asp-validation-for="MaDV" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NgayDangKi" class="control-label"></label>
+                <input asp-for="NgayDangKi" class="form-control" />
+                <span asp-validation-for="NgayDangKi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoLuong" class="control-label"></label>
+                <input asp-for="SoLuong" class="form-control" />
+                <span asp-validation-for="SoLuong" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Lưu" class="btn btn-primary btn-create" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="add_TSX">Trở lại danh sách</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
